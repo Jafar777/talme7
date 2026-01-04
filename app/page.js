@@ -199,20 +199,23 @@ export default function Home() {
         {/* Main CTA Button */}
         <div className="relative group animate-bounce-slow">
           <div className="absolute -inset-3 bg-gradient-to-r from-primary to-secondary rounded-3xl blur-lg opacity-50 group-hover:opacity-70 transition duration-500"></div>
-          <Link 
-            href="/create-game" 
-            className="relative px-12 py-5 bg-gradient-to-r from-primary to-primary-dark rounded-2xl text-white font-bold text-xl md:text-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-3 min-w-[280px]"
-          >
-            <span>إنشاء لعبة جديدة</span>
-            <span className="text-2xl animate-pulse-slow">🎮</span>
-          </Link>
+<Link 
+  href="/create-game" 
+  className="relative px-12 py-5 bg-gradient-to-r from-primary to-primary-dark rounded-2xl text-white font-bold text-xl md:text-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-3 min-w-[280px]"
+>
+  <span>إنشاء لعبة جديدة</span>
+  <span className="text-2xl animate-pulse-slow">🎮</span>
+</Link>
         </div>
 
         {/* Additional options */}
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
-          <button className="px-8 py-3 bg-white/80 backdrop-blur-sm rounded-xl text-foreground font-medium border border-white/40 shadow-md hover:shadow-lg transition-all duration-200 hover:bg-white">
-            الانضمام إلى لعبة
-          </button>
+<Link 
+  href="/join-game"
+  className="px-8 py-3 bg-white/80 backdrop-blur-sm rounded-xl text-foreground font-medium border border-white/40 shadow-md hover:shadow-lg transition-all duration-200 hover:bg-white"
+>
+  الانضمام إلى لعبة
+</Link>
           <button 
             onClick={() => setIsRulesOpen(true)}
             className="px-8 py-3 bg-white/80 backdrop-blur-sm rounded-xl text-foreground font-medium border border-white/40 shadow-md hover:shadow-lg transition-all duration-200 hover:bg-white flex items-center justify-center gap-2"
